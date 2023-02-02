@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/af1f124c63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="so.css"/>
+</head>
+<body>
+   <div style="margin-left: 100px; width: 80%;">
+    <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px;">How to force child div to be 100% of parent div's height without specifying<br> parent's height?</h1>
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 15px;">Asked 13 years,  5 months ago  Modified 2 months ago    Viewed 1.3m times</p>
+        <hr style="font-weight: lighter;">
+   </div> 
+    
+<div style="display: flex; flex-direction: row;">
+    <div style="width: 150px; height: 200%; display: flex; flex-direction: column; text-align: center;">
+        <button style="background-color: white; border-width: 0px; height: 100px; width: 100px; font-size: 30px;color: gray;"><i class="fa-sharp fa-solid fa-caret-up"></i></button>
+        <p style="font-size: 50px; margin: 0px;padding-right: 15px;">697</p>
+        <button style="background-color: white;   border-width: 0px; height: 100px; width: 100px; font-size: 30px; color: gray;"><i class="fa-sharp fa-solid fa-caret-down"></i></button>
+        <svg  style="height: 30px; width: 40px; margin-left: 30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M336 0h-288C21.49 0 0 21.49 0 48v431.9c0 24.7 26.79 40.08 48.12 27.64L192 423.6l143.9 83.93C357.2 519.1 384 504.6 384 479.9V48C384 21.49 362.5 0 336 0zM336 452L192 368l-144 84V54C48 50.63 50.63 48 53.1 48h276C333.4 48 336 50.63 336 54V452z"/></svg>
+        <svg  style="height: 30px; width: 40px; margin: 30px;"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg>
+      </div>
+    
+    
+    
+    
+    
+      <div style="width: 50%;">
+        
+        <div>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;">I have a site with the following structure:</p>
+          <div style="background-color: lightgray;padding: 5px;">
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;"> &#60;div id="header">&#60;/div><br>
+    
+                &#60;div id="main"><br>
+                &#60;div id="navigation">&#60;/div><br>
+                &#60;div id="content">&#60;/div><br>
+                 &#60;/div><br>
+    
+                &#60;div id="footer">&#60;/div></p><br>
+          </div>  
+    
+    
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">The navigation is on the left and the content div is on the right. The information for the content div is pulled in through PHP, so it's different every time.</p>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">How can I scale the navigation vertically so that its height is the same as the content div's height, no matter which page is loaded?</p>
+           <div style="display: flex; flex-direction: row;">
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; background-color: lightblue; margin-right: 10px; border-radius: 5px;padding: 5px;">html</p>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; background-color: lightblue;margin-right: 10px; border-radius: 5px;padding: 5px;"">css</p>
+           </div> 
+        </div>
+    
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">Share  Improve this question  Follow</p>
+           <div style="display: flex;flex-direction: column; margin-left: 18px;">
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: rgb(84, 167, 195);">edited Jan 3, 2019 at 20:20</p>
+           <div style="display: flex; flex-direction: row;">
+            <img src="https://i.stack.imgur.com/UIrGI.jpg?s=128&g=1" style="height: 40px; width: 40px;">
+            <div style="display: flex; flex-direction: column;">
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; margin-bottom: 0px; margin-top: 1px; color:rgb(86, 170, 198);">Tyler H</p>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;margin-top: 2px;">20.4k<span class="dot" style="background-color: yellow;"></span>61<span class="dot" style="background-color: grey;"></span>75<span class="dot" style="background-color: gold;"></span>95</p>
+            </div> 
+           </div>
+           </div>  
+              
+             
+             
+           <div style="display: flex; flex-direction: column; margin-left:20px; background-color: rgb(120, 180, 200); padding: 20px;">
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;">asked Jul 13, 2009 at 22:14</p>
+            <div style="display: flex;flex-direction: row;">
+             <button style="height: 60px; width: 60px; background-color: grey;color: white;font-size: 20px;"><i class="fa-regular fa-user"></i></button>
+              <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; margin-left: 10px;">user137726</p>
+            </div>
+           </div>
+               
+             
+    
+        </div>
+        <hr>
+         <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">2  Use display table on parent and display table-cell on child. This will make child as long as the parent is. See stackoverflow.com/q/22712489/3429430 –user31782 Dec 7, 2016 at 17:07</p>
+         <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">12 You can just set display: flex; align-items: stretch; for the div#main. And don't use height: 100% for div#content –IhorJun 19, 2019 at 11:44</p>
+         <input type="text" placeholder="Add a comment" style="height: 20px; width: 100%; border-width: 0px; font-size: 20px;">
+      </div>  
+</div>
+  
+    
+
+    </body>
+</html>
